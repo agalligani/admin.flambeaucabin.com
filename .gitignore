@@ -5,28 +5,8 @@
 # Ignore configuration files that may contain sensitive information
 /sites/default/settings.php
 
-# Ignore paths that may contain user-generated content
-/sites/*/files
-/sites/*/public
-/sites/*/private
-/sites/*/files-public
-/sites/*/files-private
-
-# Ignore paths that may contain temporary files
-/sites/*/translations
-/sites/*/tmp
-/sites/*/cache
-
 # Ignore paths that may contain temporary files
 /sites/themes/custom/*/node_modules
-
-# Ignore testing related files
-/sites/simpletest
-
-# Ignore drupal core (if not versioning drupal sources)
-#/core
-/modules/README.txt
-/profiles/README.txt
-/sites/README.txt
-#/sites/example.sites.php
 .vscode
+.editorconfig
+.gitattributes
