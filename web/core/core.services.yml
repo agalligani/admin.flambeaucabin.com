@@ -34,14 +34,19 @@ parameters:
     - webcal
     - rtsp
   cors.config:
-    enabled: false
+    enabled: true
+    # Specify allowed headers, like 'x-allowed-header'.
     allowedHeaders: []
-    allowedMethods: []
+    # Specify allowed request methods, specify ['*'] to allow all possible ones.
+    allowedMethods: [get]
+    # Configure requests allowed from specific origins.
     allowedOrigins: ['*']
+    # Sets the Access-Control-Expose-Headers header.
     exposedHeaders: false
+    # Sets the Access-Control-Max-Age header.
     maxAge: false
-    supportsCredentials: false
-  tempstore.expire: 604800
+    # Sets the Access-Control-Allow-Credentials header.
+    supportsCredentials: false  tempstore.expire: 604800
 services:
   # Simple cache contexts, directly derived from the request context.
   cache_context.ip:
